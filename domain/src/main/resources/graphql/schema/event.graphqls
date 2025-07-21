@@ -1,0 +1,7 @@
+type Event {
+    id: ID!
+    venue: [Venue!]!
+    name: String!
+    startTime: LocalDateTime!
+    endTime: LocalDateTime!
+}

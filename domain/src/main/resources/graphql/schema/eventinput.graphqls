@@ -1,0 +1,6 @@
+input EventInput {
+    name: String!
+    startTime: String!
+    endTime: String!
+    venueIds: [ID!]!
+}

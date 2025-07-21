@@ -2,7 +2,15 @@
 # scalar UmcReferenceId
 
 type Query {
+    events: [Event!]!
+    venuesWithLatestEvents: [Venue!]!
 }
 
 type Mutation {
+    createEvent(
+        venueId: ID!,
+        name: String!,
+        startTime: String!,
+        endTime: String!
+    ): Event!
 }
